@@ -1,0 +1,235 @@
+.Skills{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.react-about, .jquery-about, .vsCode-about, .javaScript-about, .typeScript-about, .html-about, .css-about, .git-about, .github-about, .figma-about{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    height: 80vh;
+    transition: 0.6s ease-in;
+    background-color: #eaeaea00;
+    color: #fff;
+    opacity: 0;
+}
+
+.react-about.open, .jquery-about.open, .vsCode-about.open, .javaScript-about.open, .typeScript-about.open, .html-about.open, .css-about.open, .git-about.open, .github-about.open, .figma-about.open{
+    transition-delay: 0.5s;
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+.react-about .about-in, .jquery-about .about-in, .vsCode-about .about-in, .javaScript-about .about-in, .typeScript-about .about-in, .html-about .about-in, .css-about .about-in, .git-about .about-in, .github-about .about-in, .figma-about .about-in{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about-in .about-img{
+    width: 40%;
+    margin: 0 30%;
+}
+.about-img img{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 1vw #ffffff80);
+}
+
+.about-in h3{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+.skills_in{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills_in div{
+    box-shadow: 0 0 1vw #33333330;
+    cursor: pointer;
+    animation: morph 2s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 7vw;
+    transition: all 1s ease-in-out;
+    width: 7vw;
+    z-index: 5;
+    margin: 1.5vw;
+    background-color: #eaeaea;
+    position: relative;
+}
+.skills_in div span{
+    position: absolute;  /*어떤 요소에 absolute를 주면 블럭요소는 inline으로 변경됨.*/
+        width: 2.1vw;
+        color : #fff;
+        top : -1.2vw;
+        font-size: 0.8vw;
+        text-align: center;
+        border-radius: 5px;
+        left: 0%;                    /*중앙배치 : 왼쪽에서 50%위치*/
+        transform: translateX(-50%);  /*중앙배치 : X크기값을 50%만큼 이동*/
+        opacity: 0;                   /*이벤트설정 : 서서히 변하게 함*/           /*어떤 변화가 요청되면 0.5초뒤에 일어나자.*/
+        visibility: hidden;
+        rotate: -42deg;
+}
+.skills_in div:hover span{
+    opacity: 1;
+    visibility: visible;
+}
+@keyframes morph {
+    0% {
+              border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+      } 
+      
+      50% {
+              border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+    
+      100% {
+          border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+      } 
+  }
+.skills_in .a01, .skills_in .a05{
+    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    animation: morph1 3s ease-in-out infinite;
+    border-radius: 50% 60% 40% 80% / 60% 70% 30% 60%;
+    transition: all 1s ease-in-out;
+    z-index: 5;
+    background-color: #eaeaea;
+
+}
+@keyframes morph1 {
+    0% {
+              border-radius:  50% 60% 40% 80% / 60% 70% 30% 60%;
+      } 
+      
+      50% {
+              border-radius:  70% 60% 70% 40% / 50% 60% 30% 60%;
+      }
+    
+      100% {
+          border-radius:  50% 60% 40% 80% / 60% 70% 30% 60%;
+      } 
+  }
+.skills_in .a02, .skills_in .a06{
+    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    animation: morph2 2.5s ease-in-out infinite;
+    border-radius: 70% 40% 60% 50% / 70% 40% 60% 30%;
+    transition: all 1s ease-in-out;
+    z-index: 5;
+    background-color: #eaeaea;
+}
+@keyframes morph2 {
+    0% {
+              border-radius:  70% 40% 60% 50% / 70% 40% 60% 30%;
+      } 
+      
+      50% {
+              border-radius:  50% 60% 70% 40% / 50% 70% 30% 60%;
+      }
+    
+      100% {
+          border-radius:  70% 40% 60% 50% / 70% 40% 60% 30%;
+      } 
+  }
+.skills_in .a07, .skills_in .a09{
+    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    animation: morph3 2.5s ease-in-out infinite;
+    border-radius: 70% 40% 60% 50% / 70% 40% 60% 30%;
+    transition: all 1s ease-in-out;
+    z-index: 5;
+    background-color: #eaeaea;
+}  
+@keyframes morph3 {
+    0% {
+              border-radius:  60% 45% 70% 55% / 48% 50% 65% 40%;
+      } 
+      
+      50% {
+              border-radius:  45% 65% 40% 70% / 65% 40% 70% 45%;
+      }
+    
+      100% {
+          border-radius:   60% 45% 70% 55% / 48% 50% 65% 40%;
+      } 
+  }
+.skills_in div:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: 0 0 1vw #fff;
+    filter: drop-shadow(0 0 1vw #fff);
+    background-color: #ffffff05;
+    animation-play-state: paused;
+}
+.skills_in div img{
+    width: 3vw;
+    height: auto;
+    margin: 2vw;
+}
+@media screen and (max-width:768px){
+    .react-about, .jquery-about, .vsCode-about, .javaScript-about, .typeScript-about, .html-about, .css-about, .git-about, .github-about, .figma-about{
+        width: 60%;
+        height: 34vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -110%);
+    }
+    .react-about .about-in, .jquery-about .about-in, .vsCode-about .about-in, .javaScript-about .about-in, .typeScript-about .about-in, .html-about .about-in, .css-about .about-in, .git-about .about-in, .github-about .about-in, .figma-about .about-in{
+        width: 100%;
+        height: 34vh;
+        font-size: 3.9vw;
+        text-align: center;
+    }
+    .about-in .about-img{
+        width: 40%;
+        margin: 0 30%;
+    }
+    .about-in .about-txt{
+        height: fit-content;
+    }
+    .about-in h3{
+        font-size: 6vw;
+        margin: 1vw 0;
+    }
+    .about-in p{
+        margin: 0;
+    }
+    .skills_in{
+        display: flex;
+        width: 64.5vw;
+        transform: translate(-50%, -10%);
+    }
+    .skills_in div{
+        height: 16.5vw;
+        width: 16.5vw;
+        margin: 2.5vw;
+        box-shadow: 0 0 1vw #ffffff30;
+        filter: drop-shadow(0 0 1vw #ffffff30);
+        background-color: #eaeaea;
+    }
+    .skills_in div span{
+        display: none;
+    }
+
+    .skills_in div img{
+        width: 9vw;
+        height: auto;
+        margin: 3.75vw;
+    }
+}

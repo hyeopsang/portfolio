@@ -1,0 +1,275 @@
+.Project{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;    
+}
+.Project .animated-title {position:relative; width: 100%;max-width:100%; height: 24vw;  overflow: unset;}
+.Project .animated-title .track {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 20s linear infinite; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.Project .animated-title:hover .track{
+    animation-play-state: paused;;
+}    
+.content{
+    display: flex;
+    cursor: pointer;
+}
+.tp1 img, .tp2 img, .tp3 img, .tp4 img, .tp5 img{
+    width: 100%;
+}
+.content .tp1{
+    text-align: center;
+    display: inline-grid;
+    color: white;
+    transition: transform 0.5s;
+    transform: perspective(800px) rotateY(0deg);
+    transform-style: preserve-3d;
+    width: 36vw;
+    height: 24vw;
+    margin: 0 5vw;
+}
+.tp1:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.tp1:hover .tp1_back{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.tp1 .tp1_back{
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    transform: rotateY(180deg);
+    background-color: #fff;
+    color: #333;
+    width: 36vw;
+    height: 24vw;
+} 
+.tp1_back h2, .tp2_back h2, .tp3_back h2, .tp4_back h2, .tp5_back h2{
+    font-size: 1.5vw;
+    font-weight: 800;
+    text-align: center;
+    margin: 1.5vw 0 0 0;
+}
+.link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.link img{
+    width: 1.5vw;
+    height: auto;
+    margin: 0.5vw;
+}
+.tp1_back .useSkill, .tp2_back .useSkill, .tp3_back .useSkill, .tp4_back .useSkill, .tp5_back .useSkill{
+    font-size: 0.8vw;
+    font-weight: 800;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.useSkill p{
+    text-align: center;
+    margin: 0 0.1vw;
+    color: #7e7e7e;
+}
+.useSkill p:hover{
+    color: #111;
+}
+.detail, .detail2{
+    color: #111;
+    font-weight: 500;
+    font-size: 0.8vw;
+}
+.detail h3, .detail2 h3{
+    font-weight: 800;
+}
+
+.content .tp1.flipped {
+    transform: rotateY(180deg);
+}
+.content .tp2{
+    display: inline-grid;
+    color: white;
+    transition: transform 0.5s;
+    transform: perspective(800px) rotateY(0deg);
+    transform-style: preserve-3d;
+    width: 36vw;
+    height: 24vw;
+    margin: 0 5vw;
+    text-align: center;
+}
+.tp2:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.tp2:hover .tp2_back{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.tp2 .tp2_back{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #fff;
+    color: #333;
+    width: 36vw;
+    height: 24vw;
+} 
+.content .tp2.flipped {
+    transform: rotateY(180deg);
+}
+.content .tp3{
+    text-align: center;
+    display: inline-grid;
+    color: white;
+    transition: transform 0.5s;
+    transform: perspective(800px) rotateY(0deg);
+    transform-style: preserve-3d;
+    width: 36vw;
+    height: 24vw;
+    margin: 0 5vw;
+}
+.tp3:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.tp3:hover .tp3_back{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.tp3 .tp3_back{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #fff;
+    color: #333;
+    width: 36vw;
+    height: 24vw;
+} 
+.content .tp3.flipped {
+    transform: rotateY(180deg);
+}
+.content .tp4{
+    text-align: center;
+    display: inline-grid;
+    color: white;
+    background-color: #fff;
+    transition: transform 0.5s;
+    transform: perspective(800px) rotateY(0deg);
+    transform-style: preserve-3d;
+    width: 36vw;
+    height: 24vw;
+    margin: 0 5vw;
+}
+.tp4:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.tp4 .tp4_back{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #fff;
+    color: #333;
+    width: 36vw;
+    height: 24vw;
+} 
+.tp4:hover .tp4_back{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.content .tp4.flipped {
+    transform: rotateY(180deg);
+}
+.content .tp5{
+    text-align: center;
+    display: inline-grid;
+    color: white;
+    background-color: #fff;
+    transition: transform 0.5s;
+    transform: perspective(800px) rotateY(0deg);
+    transform-style: preserve-3d;
+    width: 36vw;
+    height: 24vw;
+    margin: 0 5vw;
+}
+.tp5:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.tp5 .tp5_back{
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #fff;
+    color: #333;
+    width: 36vw;
+    height: 24vw;
+} 
+.tp5:hover .tp5_back{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.content .tp5.flipped {
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width:768px){
+    .Project{
+        width: 100%;
+        position: relative;
+    }
+    .Project .animated-title {padding: 0; position:relative; width: 100%;max-width:100%; height: 54vw;  overflow: unset;}
+    .Project .animated-title .track {position: absolute; white-space: nowrap;will-change: transform;animation: marquee 20s linear infinite; }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    .Project .animated-title:hover .track{
+        animation-play-state: paused;;
+    }    
+    .content{
+        display: flex;
+    }  
+    .content .tp1, .content .tp2, .content .tp3, .content .tp4, .content .tp5{
+        width: 81vw;
+        height: 54vw;
+        margin: 0 2vw;
+        box-shadow: 0 0 2vw #ffffff70;
+    
+    }   
+    .tp1_back h2, .tp2_back h2, .tp3_back h2, .tp4_back h2, .tp5_back h2{
+        font-size: 3vw;
+        font-weight: 800;
+        text-align: center;
+    
+    }
+    .tp1_back .useSkill, .tp2_back .useSkill, .tp3_back .useSkill, .tp4_back .useSkill, .tp5_back .useSkill{
+        font-size: 1.8vw;
+        font-weight: 800;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tp1 .tp1_back,.tp2 .tp2_back,.tp3 .tp3_back,.tp4 .tp4_back, .tp5 .tp5_back{
+        width: 81vw;
+        height: 54vw;
+
+    }
+    .detail, .detail2{
+        color: #111;
+        font-weight: 500;
+        font-size: 1.8vw;
+    }
+    .detail h3, .detail2 h3{
+        font-weight: 800;
+    }
+}

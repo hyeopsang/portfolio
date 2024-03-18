@@ -1,0 +1,97 @@
+.About{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.About h2{
+    padding: 4vw 0;
+    text-align: center;
+    font-size: 2vw;
+}
+.about_in{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2vw;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about_photo{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 30vw;
+    overflow: hidden;
+    margin-right: 3vw;
+}
+.about_photo img{
+    width: 100%;
+    height: auto;
+}
+.about_txt{
+    width: 50vw;
+    margin: auto 0;
+    margin-left: 3vw;
+}
+.about_txt p{
+    line-height: 2vw;
+    padding: 1vw 0;
+    cursor: pointer;
+}
+.about_txt p:hover{
+    color: rgb(110, 110, 110);
+}
+@media screen and (max-width:768px){
+    .About{
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+    .About h2{
+        padding: 30vw 0;
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    .about_in{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 3.5vw;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    .about_photo{
+        width: 50vw;
+        height: 50vw;
+        border-radius: 30vw;
+        overflow: hidden;
+        margin-right: 3vw;
+    }
+    .about_photo img{
+        width: 100%;
+        height: auto;
+    }
+    .about_txt{
+        margin: auto 0;
+        width: 90%;
+    }
+    .about_txt p{
+        line-height: 4vw;
+        padding: 1vw 0;
+        cursor: pointer;
+    }
+    .about_txt p:hover{
+        color: rgb(110, 110, 110);
+    }
+}
+
