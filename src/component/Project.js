@@ -178,7 +178,7 @@ const Project = () => {
                             <div className="tp5_back">
                                 <h2>Newbalance</h2>
                                 <div className="link">
-                                    <img src={Nicon} onClick={() => window.open("https://hyeop-book.netlify.app/")}/>
+                                    <img src={Nicon} onClick={() => window.open("https://newbalancekr.netlify.app")}/>
                                     <img src={Github} onClick={() => window.open("https://github.com/hyeopsang/newBalance")}/>
                                 </div>
                                 <div className="useSkill">
@@ -306,7 +306,7 @@ const Project = () => {
                             <div className="tp5_back">
                                 <h2>Newbalance</h2>
                                 <div className="link">
-                                    <img src={Nicon} onClick={() => window.open("https://hyeop-book.netlify.app/")}/>
+                                    <img src={Nicon} onClick={() => window.open("https://newbalancekr.netlify.app")}/>
                                     <img src={Github} onClick={() => window.open("https://github.com/hyeopsang/newBalance")}/>
                                 </div>
                                 <div className="useSkill">
