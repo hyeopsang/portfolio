@@ -179,7 +179,7 @@ const Project = () => {
                                 <h2>Newbalance</h2>
                                 <div className="link">
                                     <img src={Nicon} onClick={() => window.open("https://newbalancekr.netlify.app")}/>
-                                    <img src={Github} onClick={() => window.open("https://github.com/hyeopsang/newBalance")}/>
+                                    <img src={Github} onClick={() => window.open("https://github.com/hyeopsang/Newbalance")}/>
                                 </div>
                                 <div className="useSkill">
                                     <p style={{color:"#ffa944", backgroundColor:"#feebe1",padding:"0.1vw 0.3vw", borderRadius:"0.3vw"}}># Html</p>
@@ -307,7 +307,7 @@ const Project = () => {
                                 <h2>Newbalance</h2>
                                 <div className="link">
                                     <img src={Nicon} onClick={() => window.open("https://newbalancekr.netlify.app")}/>
-                                    <img src={Github} onClick={() => window.open("https://github.com/hyeopsang/newBalance")}/>
+                                    <img src={Github} onClick={() => window.open("https://github.com/hyeopsang/Newbalance")}/>
                                 </div>
                                 <div className="useSkill">
                                     <p style={{color:"#ffa944", backgroundColor:"#feebe1",padding:"0.1vw 0.3vw", borderRadius:"0.3vw"}}># Html</p>
