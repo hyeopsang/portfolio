@@ -179,7 +179,7 @@ const Skills = ({skillRef}) => {
                         <div className="about-txt">
                             <h3>Jquery</h3>
                             <p>
-                                제이쿼리를 사용하여 단순한 코드로 웹 페이지에 다양한 기능를 구현할 수 있습니다.
+                                제이쿼리를 사용하여 단순한 코드로 웹페이지에 다양한 기능를 구현할 수 있습니다.
                             </p>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ const Skills = ({skillRef}) => {
                         <div className="about-img"><img src={html} /></div>
                         <div className="about-txt">
                             <h3>HTML</h3>
-                            <p>웹접근성, 표준성을 준수하며 시멘틱태그를 이용해 마크업 할 수 있습니다.</p>
+                            <p>웹접근성, 표준성을 준수하며 시멘틱 태그를 이용해 마크업 할 수 있습니다.</p>
                         </div>
                     </div>
                 </div>  
@@ -217,7 +217,7 @@ const Skills = ({skillRef}) => {
                         <div className="about-txt">
                             <h3>Css</h3>
                             <p>
-                                position, display를 적절히 사용하여 반응형웹을 적용할 수 있습니다. 
+                                position, display를 적절히 사용하여 반응형 웹을 적용할 수 있습니다. 
                             </p>
                         </div>
                     </div>
