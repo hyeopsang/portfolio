@@ -153,7 +153,7 @@ const Project = () => {
                             <div className="tp4_back">
                                 <h2>portfolio</h2>
                                 <div className="link">
-                                    <img src={Github} onClick={() => window.open("외부링크 URL")}/>
+                                    <img src={Github} onClick={() => window.open("https://github.com/hyeopsang/portfolio")}/>
                                 </div>
                                 <div className="nav"></div>
                                 <div className="useSkill">
@@ -281,7 +281,7 @@ const Project = () => {
                             <div className="tp4_back">
                                 <h2>portfolio</h2>
                                 <div className="link">
-                                    <img src={Github} onClick={() => window.open("외부링크 URL")}/>
+                                    <img src={Github} onClick={() => window.open("https://github.com/hyeopsang/portfolio")}/>
                                 </div>
                                 <div className="nav"></div>
                                 <div className="useSkill">
